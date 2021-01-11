@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: milene@gmail.com
+Date: Fri, 08 Jan 2021 18:21:19 -0000
+Message-ID: <161013007901.3231.7853159288387760916@adriano-Inspiron-5570>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Mw/ag65ni-16d72f3be519bf47c6b49bec8bdc4c8c/
+
+Your username, in case you’ve forgotten: milene
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
