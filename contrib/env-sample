@@ -1,1 +1,3 @@
-SECRET_KEY=khg+066f$mn%xjeba53zrl#x2*j7*dzcr5p3dimaesu(ts*p32
+SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuapp.com
