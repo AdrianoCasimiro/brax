@@ -3,3 +3,5 @@
 __pycache__
 .sent_emails
 .venv
+*.sqlite3
+*pyc
