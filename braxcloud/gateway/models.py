@@ -9,3 +9,7 @@ class Gateway(models.Model):
 
     def __str__(self):
         return self.codigo
+
+    class Meta:
+        verbose_name = 'gateway'
+        verbose_name_plural = 'gateways'
