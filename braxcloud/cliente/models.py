@@ -1,4 +1,6 @@
 from django.db import models
+from django.shortcuts import resolve_url as r
+from django.urls import reverse
 
 
 class Cliente(models.Model):
@@ -43,6 +45,7 @@ class Cliente(models.Model):
         return self.razao_social
 
 
+
 class Planta(models.Model):
     nome = models.CharField(max_length=150)
     cliente = models.ForeignKey('Cliente', on_delete=models.CASCADE, verbose_name='clientes')
@@ -53,6 +56,9 @@ class Planta(models.Model):
 
     def __str__(self):
         return self.nome
+
+    def get_absolute_url(self):
+        return reverse('cliente:planta-detail', kwargs={'id': self.id})
 
 
 class Setor(models.Model):

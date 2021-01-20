@@ -18,9 +18,10 @@ from django.urls import path, include
 from braxcloud.core.views import home
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('index/', home, name='home'),
     path('accounts/', include('braxcloud.accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
     path('sensores/', include('braxcloud.sensor.urls')),
+    path('cliente/', include('braxcloud.cliente.urls', namespace='cliente')),
 ]
