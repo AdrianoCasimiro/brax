@@ -1,6 +1,7 @@
 from django.db import models
 from ..cliente.models import Equipamento, Cliente, Planta, Setor
 
+
 class Sensor(models.Model):
 
     DISJUNTOR_CHOICES = [
@@ -282,7 +283,7 @@ class SensorTemp(models.Model):
         get_latest_by = ['datahora']
 
     def __str__(self):
-        return self.sensor
+        return str(self.sensor)
 
 
 class SensorDPU(models.Model):
@@ -298,5 +299,7 @@ class SensorDPU(models.Model):
         get_latest_by = ['datahora']
 
     def __str__(self):
-        return self.sensor
+        return str(self.sensor)
+
+
 
