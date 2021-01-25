@@ -44,10 +44,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'braxcloud.core',
     'braxcloud.cliente',
-    'braxcloud.sensor',
     'braxcloud.alerta',
     'braxcloud.gateway',
-
+    'braxcloud.sensor.apps.SensorConfig',
 ]
 
 MIDDLEWARE = [
