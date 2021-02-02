@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sensores/', include('braxcloud.sensor.urls')),
     path('cliente/', include('braxcloud.cliente.urls', namespace='cliente')),
+    path('gateway/', include('braxcloud.gateway.urls', namespace='gateway')),
 ]

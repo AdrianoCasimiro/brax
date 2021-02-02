@@ -48,9 +48,8 @@
                     aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="./"><img src="{% static 'images/brax_logo_branco.png' %}" alt="Logo"></a>
-            <a class="navbar-brand hidden" href="./"><img src="{% static 'images/brax_logo_branco.png' %}"
-                                                          alt="Logo"></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/brax_logo_branco.png' %}" alt="Logo"></a>
+            <a class="navbar-brand hidden" href="./"><img src="{% static 'images/brax_logo_branco.png' %}" alt="Logo"></a>
         </div>
 
         <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -89,7 +88,7 @@
                     <a href="{% url 'cliente:planta_list' %}"> <i class="menu-icon fa fa-tasks"></i>Planta</a>
                 </li>
                 <li>
-                    <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
+                    <a href="{% url 'gateway:gateway_list' %}"> <i class="menu-icon ti-email"></i>Gateway</a>
                 </li>
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"

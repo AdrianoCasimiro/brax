@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Gateway
+from ..models import Gateway
 from braxcloud.cliente.models import Cliente, Planta
 
 
