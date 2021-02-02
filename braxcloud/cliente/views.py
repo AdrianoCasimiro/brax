@@ -1,5 +1,3 @@
-from django.core.exceptions import ObjectDoesNotExist, EmptyResultSet
-from django.http import HttpResponseNotFound, request
 from django.views.generic import ListView, DetailView
 from .models import Planta
 from .. accounts.models import AcessoUsuario
