@@ -4,7 +4,9 @@ from .serializers import SensorTempSerializers, SensorDpuSerializers
 
 class SensorTempViewSet(viewsets.ModelViewSet):
     serializer_class = SensorTempSerializers
-    queryset = SensorTemp.objects.all()
+
+    def get_queryset(self):
+        return SensorTemp.objects.filter(sensor__cliente__nome_fantasia='Tigre')
 
 
 class SensorDpuViewSet(viewsets.ModelViewSet):
