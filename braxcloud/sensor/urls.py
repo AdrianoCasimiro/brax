@@ -9,4 +9,5 @@ api_router.register(r'dpu', SensorDpuViewSet)
 
 urlpatterns = [
     path("api/", include(api_router.urls)),
+
 ]
