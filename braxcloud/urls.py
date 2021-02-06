@@ -25,4 +25,5 @@ urlpatterns = [
     path('sensores/', include('braxcloud.sensor.urls')),
     path('cliente/', include('braxcloud.cliente.urls', namespace='cliente')),
     path('gateway/', include('braxcloud.gateway.urls', namespace='gateway')),
+    path('alerta/', include('braxcloud.alerta.urls', namespace='alerta')),
 ]
